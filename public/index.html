@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/master.css" media="screen" title="no title">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">Ey! Klart Jag Kan Alla Landskap</a>
+    </div>
+  </nav>
+  <div class="container">
+
+
+<div class="instruk">
+  <div class="row">
+    <h4 class="center-align">Klicka på start och börja skriva de landskap du kommer på, du har 5 minuter på dig!</h4>
+    <a class="col s4 offset-s4 waves-effect waves-light btn center-align" id="start">Starta</a>
+</div>
+</div>
+
+  <div class="game">
+    <p id="infoText">
+      Du svara genom att trycka på enter
+    </p>
+    <div class="input-field col s4">
+      <input  id="search" type="text" class="validate">
+      <label for="search">Landskap</label>
+    </div>
+
+
+    <ul id="col" class="collection ">
+
+    </ul>
+  </div>
+  <div class="row" id="result">
+    <ul id="right" class="collection with-header col s4">
+      <li class="collection-header"><h5>Rätt</h5></li>
+
+    </ul>
+    <ul id="wrong" class="collection with-header col s4">
+      <li class="collection-header"><h5>Fel</h5></li>
+
+    </ul>
+
+    <ul id="facitList" class="collection with-header col s4">
+      <li class="collection-header"><h5>Facit</h5></li>
+
+    </ul>
+
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="js/getter.js">
+
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+</html>

@@ -1,0 +1,16 @@
+.game{
+  display: none;
+}
+#col{
+  display: none;
+}
+#result{
+  display: none;
+}
+body,html, ul, li{
+  background-color: beige;
+}
+
+.nav-wrapper{
+  background-color: darkslategray;
+}
