@@ -53,8 +53,13 @@ const getter = {
     liTag.className = "collection-item";
     liTag.appendChild(textN)
     list.style.display = 'block';
+    if (!getter.answers.includes(input)) {
+        getter.answers.push(input)
+    } else {
+        liTag.classList.add('cheater')
+    }
     list.appendChild(liTag);
-    getter.answers.push(input)
+
     document.querySelector('#search').value = ""
   },
 

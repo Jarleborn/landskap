@@ -14,3 +14,8 @@ body,html, ul, li{
 .nav-wrapper{
   background-color: darkslategray;
 }
+
+.cheater {
+    background-color: #cb4e4e !important;
+    color: white;
+}
