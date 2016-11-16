@@ -4,7 +4,7 @@
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
-http.listen(8000);
+
 
 app.use(express.static(__dirname + '/public'));
 app.all('/', function (req, res, next) {
@@ -47,3 +47,7 @@ app.get('/lsakp', function (req, res) {
   res.send(lskap)
 
 })
+
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
