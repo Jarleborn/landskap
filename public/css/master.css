@@ -1,8 +1,8 @@
 .game{
-  display: none;
+  display: block;
 }
 #col{
-  display: none;
+  display: block;
 }
 #result{
   display: none;

@@ -3,18 +3,14 @@ const getter = {
   answers: new Array(),
   lskap: null,
   getLskap: function () {
-
-
     fetch('/lsakp', {
       method: 'get'
     }).then(function(response) {
-
       return response.json();
     }).then(function(data) {
-
       getter.correct(data);
-    }).catch(function() {
-      console.log("Booo");
+    }).catch(function(err) {
+      console.log(err);
     });
   },
   init: function () {
@@ -26,17 +22,15 @@ const getter = {
         const info = document.querySelector('#infoText')
         info.textContent = "Nu är det bara 10 sekunder kvar";
         info.style.color = "red"
-      }, 290000);
+      }, 2900);
       setTimeout(function(){
         getter.getLskap()
-
-      }, 300000);
+      }, 3000);
 
     })
   },
   initSearch: function () {
     document.getElementById("search").addEventListener("keypress", function (e) {
-
       if (e.keyCode == 13 && !e.shiftKey) {
         e.preventDefault();
         getter.print();
