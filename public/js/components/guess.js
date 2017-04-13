@@ -1,6 +1,6 @@
 Vue.component('guess', {
   template: `
-    <li>
+    <li class='collection-item'>
       {{ title }}
     </li>
   `,
